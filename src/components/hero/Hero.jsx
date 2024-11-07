@@ -1,10 +1,9 @@
-import React from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
-    x: -50,
+    x: -500,
     opacity: 0,
   },
   animate: {
@@ -16,7 +15,7 @@ const textVariants = {
     },
   },
   scrollButton: {
-    opacity: 1,
+    opacity: 0,
     y: 10,
     transition: {
       duration: 2,
@@ -32,7 +31,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType: "miror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -48,34 +47,36 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>RAFI MUNGGARAN</motion.h2>
+          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web and Mobile Developer
+            Web developer and UI designer
           </motion.h1>
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
+          <motion.div variants={textVariants} className="buttons">
+            <motion.a variants={textVariants} href={`#Portfolio`}>
               See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            </motion.a>
+            <motion.a variants={textVariants} href={`#Contact`}>
+              Contact Me
+            </motion.a>
           </motion.div>
           <motion.img
-            src="/scroll.png"
-            alt=""
             variants={textVariants}
             animate="scrollButton"
+            src="/scroll.png"
+            alt=""
           />
         </motion.div>
-        <motion.div
-          className="slidingTextContainer"
-          variants={sliderVariants}
-          initial="initial"
-          animate="animate"
-        >
-          Javascript PHP Python Dart
-        </motion.div>
       </div>
+      <motion.div
+        className="slidingTextContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        Writer Content Creator Influencer
+      </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="/sa.jpg" alt="" />
       </div>
     </div>
   );
