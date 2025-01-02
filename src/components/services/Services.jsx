@@ -66,7 +66,6 @@ const Services = () => {
             using the latest technologies like React, Node.js, and modern CSS
             frameworks.
           </p>
-          <button>Explore</button>
         </motion.div>
         <motion.div
           className="box"
@@ -77,7 +76,6 @@ const Services = () => {
             Crafting engaging UI/UX designs to ensure seamless user experiences,
             with skills in HTML, CSS, JavaScript, and design tools like Figma.
           </p>
-          <button>Explore</button>
         </motion.div>
         <motion.div
           className="box"
@@ -89,7 +87,6 @@ const Services = () => {
             with Node.js, Express, and database integration using SQL and
             MongoDB.
           </p>
-          <button>Explore</button>
         </motion.div>
         <motion.div
           className="box"
@@ -101,7 +98,6 @@ const Services = () => {
             React Native and Flutter, delivering smooth and responsive
             experiences on Android and iOS.
           </p>
-          <button>Explore</button>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -99,7 +99,7 @@
     flex: 2;
     display: flex;
     max-width: 1366px;
-    margin: auto;
+    margin: 5rem 20rem;
 
     @include mobile {
       flex-direction: column;
@@ -107,7 +107,7 @@
     }
 
     .box {
-      padding: 50px;
+      padding: 60px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
@@ -123,22 +123,6 @@
       p {
         @include mobile {
           display: none;
-        }
-      }
-
-      button {
-        padding: 10px;
-        background-color: orange;
-        border: none;
-        cursor: pointer;
-
-        @include mobile {
-          background-color: transparent;
-          border: 1px solid orange;
-          border-radius: 5px;
-          color: orange;
-          width: 50%;
-          padding: 5px;
         }
       }
     }

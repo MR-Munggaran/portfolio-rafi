@@ -6,26 +6,30 @@ const items = [
   {
     id: 1,
     title: "Chat-app MERN",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    img: "/chat.jpg",
+    desc: "Aplikasi di samping adalah hasil karya saya yang dibuat dengan mengikuti tutorial dari channel YouTube 'As a Programmer.' Aplikasi ini memiliki fitur utama berupa chat realtime.",
+    url: "chat-app-yt-aap-production-369d.up.railway.app",
   },
   {
     id: 2,
     title: "Portfolio React",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    img: "/portfolio.jpg",
+    desc: "Website di samping adalah portofolio pribadi saya yang dibuat dengan mengikuti tutorial dari YouTuber 'Lama Dev.' Website ini dibangun menggunakan React Native dan dilengkapi dengan efek parallax untuk tampilan yang menarik.",
+    url: "https://portfolio-rafi-theta.vercel.app/",
   },
   {
     id: 3,
-    title: "Clone Twitter",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Startnews Mobile",
+    img: "/startmob.png",
+    desc: "Aplikasi di samping adalah hasil UAS saya dalam mata kuliah Pemrograman Mobile. Aplikasi ini merupakan versi mobile dari website dengan fitur seperti dashboard admin, kategori berita, detail berita, dan lainnya. Dibangun menggunakan React Native untuk pengalaman pengguna yang responsif.",
+    url: "https://drive.google.com/drive/folders/1SaLXtn7igC6V_cYQADa5sy1rMq0uYyJL?usp=sharing",
   },
   {
     id: 4,
-    title: "Startnews App/Web",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Startnews Web",
+    img: "/startnews.png",
+    desc: "Aplikasi di samping adalah hasil UAS saya dalam mata kuliah Pemrograman Website. Website ini memiliki fitur seperti dashboard admin, kategori berita, detail berita, dan lainnya. Dibangun menggunakan Laravel, saya berkontribusi lebih banyak pada pengembangan bagian backend.",
+    url: "#",
   },
 ];
 
@@ -48,7 +52,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.url}>See Demo</a>
           </motion.div>
         </div>
       </div>
