@@ -8,7 +8,7 @@ const items = [
     title: "Chat-app MERN",
     img: "/chat.jpg",
     desc: "Aplikasi di samping adalah hasil karya saya yang dibuat dengan mengikuti tutorial dari channel YouTube 'As a Programmer.' Aplikasi ini memiliki fitur utama berupa chat realtime.",
-    url: "chat-app-yt-aap-production-369d.up.railway.app",
+    url: "#",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <a href={item.url}>See Demo</a>
+            <a href={item.url}>Soon</a>
           </motion.div>
         </div>
       </div>
