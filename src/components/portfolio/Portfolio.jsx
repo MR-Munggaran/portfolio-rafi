@@ -5,9 +5,9 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Chat-app MERN",
-    img: "/chat.jpg",
-    desc: "Aplikasi di samping adalah hasil karya saya yang dibuat dengan mengikuti tutorial dari channel YouTube 'As a Programmer.' Aplikasi ini memiliki fitur utama berupa chat realtime.",
+    title: "Recomend Restaurant",
+    img: "/final-project-dicoding.png",
+    desc: "Aplikasi di samping adalah hasil course dicoding saya dalam course Belajar Fundamental Aplikasi Flutter. Fiturnya ada navigasi, notifikasi, search, tema, komentar, dll.",
     url: "#",
   },
   {
